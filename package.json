@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-deploy-appshell",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.1.0",
+  "description": "applicationCache based shell for loading Ember apps",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,11 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/ef4/ember-cli-deploy-appshell",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Edward Faulkner <ef@alum.mit.edu>",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
