@@ -20,13 +20,13 @@ module.exports = {
     if (type === 'head') {
       let loader = fs.readFileSync(require.resolve('loader.js'), 'utf8');
       let src = fs.readFileSync(path.join(__dirname, 'lib', 'bootloader.js'), 'utf8').replace(/MODULE_PREFIX/g, config.modulePrefix);
-      var bootloader = uglify.minify(loader + src, { fromString: true, mangle:true, compress: true}).code;
+      let bootloader = uglify.minify(loader + src, { fromString: true, mangle:true, compress: true}).code;
       return `<script type="text/javascript">${ bootloader }</script>`;
     }
   },
 
   createDeployPlugin: function(options) {
-    var DeployPlugin = DeployPluginBase.extend({
+    let DeployPlugin = DeployPluginBase.extend({
       name: options.name,
       didBuild: function(context) {
         let distDir = context.distDir;
