@@ -7,9 +7,15 @@ via an `applicationCache`-based bootloader. It
  - always boots your freshest version when the network is sufficiently fast
  - never blocks application boot to preemptively cache assets
 
-## Working example
+## Demo
 
+This app has a working deploy setup for running out of s3, complete with "lightning deploy"-style activation.
 
+https://github.com/ef4/ember-appcache-demo
+
+Running version is here:
+
+http://appcache-demo.eaf4.com/
 
 ## Key requirements:
 
