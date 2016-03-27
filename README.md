@@ -1,11 +1,13 @@
-# ember-app-shell
+# ember-cli-deploy-appshell
 
 This is an ember-cli-deploy plugin that loads your Ember application
-via an `applicationCache`-based bootloader. It
+via an `applicationCache`-based shell. It
 
  - reliably caches all your assets for speed and offline use
  - always boots your freshest version when the network is sufficiently fast
  - never blocks application boot to preemptively cache assets
+ - works correctly with CDN-deployed assets
+ - can cache external assets
 
 ## Demo
 
