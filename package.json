@@ -1,5 +1,5 @@
 {
-  "name": "ember-app-shell",
+  "name": "ember-cli-deploy-appshell",
   "version": "0.0.0",
   "description": "The default blueprint for ember-cli addons.",
   "directories": {
@@ -40,12 +40,18 @@
     "loader.js": "^4.0.0"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "ember-cli-deploy-plugin"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.1.5"
+    "ember-cli-babel": "^5.1.5",
+    "ember-cli-deploy-plugin": "^0.2.2",
+    "loader.js": "^4.0.1",
+    "minimatch": "^3.0.0",
+    "uglify-js": "^2.6.2"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "after": "broccoli-asset-rev"
   }
 }
