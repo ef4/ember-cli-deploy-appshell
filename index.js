@@ -8,9 +8,6 @@ let minimatch = require('minimatch');
 
 module.exports = {
   name: 'ember-cli-deploy-appshell',
-  isDevelopingAddon() {
-    return true;
-  },
 
   included(app) {
     this.app = app;
