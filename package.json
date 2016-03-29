@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-deploy-appshell",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "applicationCache based shell for loading Ember apps",
   "directories": {
     "doc": "doc",
